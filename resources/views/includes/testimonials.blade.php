@@ -5,7 +5,7 @@
             @foreach($testimonials as $testimonial)
                 <div class="item testimonials">
                     <img class="responsive" style="object-fit: cover; width: 120px; height: 120px"
-                         src="{{ $testimonial->image ? asset('upload/testimonials/' . $testimonial->image) : asset('resume/images/testimonials/1.jpg') }}"
+                         src="{{ $testimonial->image ? asset('storage/upload/testimonials/' . $testimonial->image) : asset('resume/images/testimonials/1.jpg') }}"
                          alt="{{$testimonial->en_name}}">
                     <blockquote>
                         <p class="quote p-3">{{$testimonial->en_comment}}</p>

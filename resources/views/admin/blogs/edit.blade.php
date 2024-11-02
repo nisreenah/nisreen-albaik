@@ -77,7 +77,7 @@
 
                                     <div class="form-group">
                                         <label for="image">Old Blog Image</label>
-                                        <p><img src="{{asset('upload/blogs/'.$blog->image)}}" width="500px;"></p>
+                                        <p><img src="{{asset('storage/upload/blogs/'.$blog->image)}}" width="500px;"></p>
                                     </div>
 
                                     <div class="form-group">

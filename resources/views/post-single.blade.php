@@ -1,5 +1,5 @@
 <div id="blog-header"
-     style="background: url({{asset('/upload/blogs/'.$blog->image)}}); background-size: cover;">
+     style="background: url({{asset('storage/upload/blogs/'.$blog->image)}}); background-size: cover;">
     <div class="overlay"></div>
     <div class="single-post-title">
         <h1>{{$blog->en_title}}</h1>

@@ -34,7 +34,7 @@
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$course->en_title}}</td>
                                         <td>{{$course->year}}</td>
-                                        <td><img width="70px" src="{{asset('upload/courses/'.$course->image)}}"></td>
+                                        <td><img width="70px" src="{{asset('storage/upload/courses/'.$course->image)}}"></td>
                                         <td>
                                             <div class="form-button-action">
                                                 <a href="{{route('courses.edit',$course->id)}}">

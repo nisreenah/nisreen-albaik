@@ -25,7 +25,7 @@
 
                                     <div class="form-group">
                                         <label for="image">Current Client Image</label>
-                                        <img width="500px" src="{{ asset('upload/testimonials/'.$testimonial->image) }}">
+                                        <img width="500px" src="{{ asset('storage/upload/testimonials/'.$testimonial->image) }}">
                                     </div>
 
                                     <div class="form-group">
