@@ -11,7 +11,7 @@
                 <div class="carousel-inner">
                     @foreach($portfolio->galleries as $key => $gallery)
                         <div class="carousel-item {{$key == 0 ? 'active' : ''}}">
-                            <img class="d-block w-100" src="{{asset('/upload/albums/'.$gallery->image_path)}}"
+                            <img class="d-block w-100" src="{{asset('storage/upload/albums/'.$gallery->image_path)}}"
                                  style="width: 100%; height: 400px; object-fit: cover;" alt="slide {{$gallery->id}}">
                         </div>
                     @endforeach

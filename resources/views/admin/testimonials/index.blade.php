@@ -37,7 +37,7 @@
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td><img width="70px"
-                                                 src="{{ asset('upload/testimonials/'.$testimonial->image) }}"></td>
+                                                 src="{{ asset('storage/upload/testimonials/'.$testimonial->image) }}"></td>
                                         <td>{{$testimonial->en_name}}</td>
                                         <td>{{Str::limit($testimonial->en_comment, 100)}}</td>
                                         <td>{{$testimonial->en_position}}</td>

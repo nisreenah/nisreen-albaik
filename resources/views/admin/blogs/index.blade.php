@@ -37,7 +37,7 @@
                                 @foreach($blogs as $blog)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td><img width="100px" src="{{asset('upload/blogs/'.$blog->image)}}"></td>
+                                        <td><img width="100px" src="{{asset('storage/upload/blogs/'.$blog->image)}}"></td>
                                         <td>{{$blog->en_title}}</td>
                                         <td>{{Str::limit($blog->en_details, 100)}}</td>
                                         {{--                                        <td>{{$blog->ar_title}}</td>--}}

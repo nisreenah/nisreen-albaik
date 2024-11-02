@@ -39,7 +39,7 @@
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$portfolio->en_name}}</td>
-                                        <td><img width="100px" src="{{asset('upload/portfolios/'.$portfolio->image)}}">
+                                        <td><img width="100px" src="{{asset('storage/upload/portfolios/'.$portfolio->image)}}">
                                         </td>
                                         <td>{{$portfolio->en_client}}</td>
                                         <td>{{$portfolio->completion}}</td>

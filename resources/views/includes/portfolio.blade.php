@@ -23,7 +23,7 @@
                                 <a class="open-project" href="{{route('show-portfolio',$portfolio->id)}}">
                                     <div class="portfolio-column">
                                         <img style="height:252px"
-                                             src="{{asset('/upload/portfolios/'.$portfolio->image)}}" alt="">
+                                             src="{{asset('storage/upload/portfolios/'.$portfolio->image)}}" alt="">
                                         <div class="portfolio-content">
                                             <h2>{{$portfolio->en_name}}</h2>
                                             <p>{{$portfolio->category->name}}</p>

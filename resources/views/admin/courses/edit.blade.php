@@ -45,7 +45,7 @@
 
                                     <div class="form-group">
                                         <label for="image">Current Course Certificate Image</label>
-                                        <img width="500px" src="{{asset('upload/courses/'.$course->image)}}">
+                                        <img width="500px" src="{{asset('storage/upload/courses/'.$course->image)}}">
                                     </div>
 
                                     <div class="form-group">
