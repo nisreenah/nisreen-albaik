@@ -5,11 +5,11 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>{{$profile->en_name ?? 'null'}} | CV, Resume, Portfolio </title>
+    <title>{{$profile->en_name ?? 'null'}}</title>
     <meta name="description"
-          content="{{$profile->en_name ?? 'null'}} CV/Resume, personal portfolio.">
+          content="{{$profile->en_name ?? 'null'}}">
     <meta name="author" content="NisreenAlbaik"/>
-    <link rel="icon" href="{{asset('resume/images/nb.jpg')}}"/>
+    <link rel="icon" href="{{asset('resume/images/N.png')}}"/>
 
     <!-- Bootstrap CSS -->
 {{--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">--}}

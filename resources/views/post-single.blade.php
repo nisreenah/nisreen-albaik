@@ -20,8 +20,8 @@
                         <p>{{$blog->en_details}}</p>
                     </div>
                     <h5>{{$blog->comments->count()}} Comments</h5>
-                    <div class="author-box row">
-                        @if($blog->comments->count() > 0)
+                    @if($blog->comments->count() > 0)
+                        <div class="author-box row">
                             @foreach($blog->comments as $comment)
                                 <div class="col-sm-10">
                                     <h3>{{$comment->name}}
@@ -30,9 +30,8 @@
                                     <p>{{$comment->comment}}</p>
                                 </div>
                             @endforeach
-                        @endif
-                    </div>
-
+                        </div>
+                    @endif
                     @include('includes.blog-social')
 
                 </div>
@@ -64,69 +63,3 @@
         </div>
     </div>
 </div>
-{{--<script>--}}
-{{--    $(document).ready(function () {--}}
-
-{{--        $('.leave-comment-btn').on('click', function (e) {--}}
-{{--            console.log('hi');--}}
-{{--            e.preventDefault();--}}
-
-{{--            var name = $("#name").val(),--}}
-{{--                comment = $("#comment").val(),--}}
-{{--                email = $("#email").val(),--}}
-{{--                blog_id = $("#blog_id").val(),--}}
-{{--                token = $("#token").val();--}}
-
-{{--            //console.log(comment);--}}
-{{--            //console.log(email);--}}
-
-{{--            $.ajax({--}}
-{{--                type: 'POST',--}}
-{{--                url: window.location.origin + '/leave-a-comment',--}}
-{{--                data: {--}}
-{{--                    name: name,--}}
-{{--                    comment: comment,--}}
-{{--                    email: email,--}}
-{{--                    blog_id: blog_id,--}}
-{{--                    _token: token--}}
-{{--                },--}}
-{{--                success: function (data) {--}}
-{{--                    var icon = 'success';--}}
-{{--                    if (data.status == false) {--}}
-{{--                        icon = 'error';--}}
-{{--                    }--}}
-{{--                    swal({--}}
-{{--                        icon: icon,--}}
-{{--                        title: data.title,--}}
-{{--                        text: data.text,--}}
-{{--                    });--}}
-{{--                },--}}
-{{--                error: function (reject) {--}}
-{{--                    var errors = $.parseJSON(reject.responseText);--}}
-{{--                    swal({--}}
-{{--                        icon: 'error',--}}
-{{--                        title: errors.errors.email ? errors.errors.email[0]--}}
-{{--                            : errors.errors.comment ? errors.errors.comment[0]--}}
-{{--                                : errors.errors.blog_id ? errors.errors.blog_id[0]--}}
-{{--                                    : errors.errors.name ? errors.errors.name[0] : '',--}}
-{{--                    });--}}
-{{--                }--}}
-{{--            });--}}
-{{--        });--}}
-{{--    });--}}
-
-{{--    $('.open-post').on('click', function () {--}}
-{{--        var postUrl = $(this).attr("href");--}}
-{{--        $('.inline-menu-container').removeClass('showx');--}}
-{{--        $('.content-blocks.pop').addClass('showx');--}}
-{{--        $('.content-blocks.pop section').load(postUrl)--}}
-{{--        return false;--}}
-{{--    });--}}
-{{--    $('#close-post').on('click', function () {--}}
-{{--        $('.content-blocks.pop').removeClass('showx');--}}
-{{--        $('.inline-menu-container').addClass('showx');--}}
-{{--        $('.content-blocks.pop section').empty();--}}
-{{--    });--}}
-{{--</script>--}}
-
-
