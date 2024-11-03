@@ -51,7 +51,7 @@
             <div class="tags"><span>Role : </span> {{$portfolio->en_role}}</div>
         </div>
         <p class="project-description">
-            {{$portfolio->en_details}}
+            {!! $portfolio->en_details !!}
         </p>
     </div>
     {{--    <div class="row text-center">--}}
