@@ -85,7 +85,7 @@
                                 @foreach($galleries as $gallery)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
-                                        <td>{{$portfolio->en_name}}</td>
+                                        <td>{{$gallery->imageable->en_name}}</td>
                                         <td><img width="100px" src="{{asset('storage/upload/albums/'.$gallery->image_path)}}">
                                         </td>
                                         <td>{{$gallery->created_at}}</td>

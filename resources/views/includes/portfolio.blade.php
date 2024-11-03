@@ -22,7 +22,7 @@
                             <div class="col-sm-6 col-xs-12 portfolio-item {{$portfolio->category->slug_name ?? 'slug_name'}}">
                                 <a class="open-project" href="{{route('show-portfolio',$portfolio->id)}}">
                                     <div class="portfolio-column">
-                                        <img style="height:252px"
+                                        <img style="height:252px; object-fit: fill;"
                                              src="{{asset('storage/upload/portfolios/'.$portfolio->image)}}" alt="">
                                         <div class="portfolio-content">
                                             <h2>{{$portfolio->en_name}}</h2>

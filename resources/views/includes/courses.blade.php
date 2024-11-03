@@ -44,11 +44,11 @@
     <h3 class="block-title">Courses</h3>
     <div class="row">
         @foreach($courses as $course)
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-3 col-sm-6">
                 <img class="courseImg" src="{{ asset('storage/upload/courses/'. $course->image) }}"
-                     style="width: 100%; height: 200px; object-fit: cover;     cursor: pointer;" alt="{{ $course->en_title }}">
+                     style="object-fit: fill; cursor: pointer;" alt="{{ $course->en_title }}">
                 <div class="course-info">
-                    <h4>{{ $course->en_title }}</h4>
+                    <h6>{{ $course->en_title }}</h6>
                     <p>{{ $course->year }}</p>
                 </div>
             </div>
