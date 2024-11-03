@@ -1,7 +1,7 @@
 <div class="block-content">
     <h3 class="block-title">Profile</h3>
     <h6 class="subheading">
-        I'm a <strong>{{$profile->en_name ?? 'Name' }}</strong>
+        My name is <strong>{{$profile->en_name ?? 'Name' }}</strong>
         from {{$profile->en_country ?? 'en_country'}}. <br/>
         {{$profile->en_bio ?? ' bio'}}
     </h6>

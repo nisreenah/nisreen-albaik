@@ -51,13 +51,13 @@ class HomeController extends Controller
         $profile = Profile::first();
         $skills = Skill::all();
         $services = Service::all();
-        $blogs = Blog::all();
+        $blogs = Blog::orderBy('created_at', 'desc')->get();
         $categories = Category::all();
         $educations = Education::all();
         $experiences = Experience::all();
-        $portfolios = Portfolio::all();
+        $portfolios = Portfolio::orderBy('completion', 'desc')->get();
         $testimonials = Testimonial::all();
-        $courses = Course::all();
+        $courses = Course::orderBy('year', 'desc')->get();
 
         return view('home',
             compact(
