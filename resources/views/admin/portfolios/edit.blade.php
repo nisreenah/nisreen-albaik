@@ -45,7 +45,7 @@
                                                id="en_client" name="en_client" placeholder="English Client Name"
                                                value="{{$portfolio->en_client}}">
                                         @error('en_client')
-                                             <span class="invalid-feedback" role="alert">
+                                        <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
@@ -57,7 +57,7 @@
                                                id="en_role" name="en_role" placeholder="English Role"
                                                value="{{$portfolio->en_role}}">
                                         @error('en_role')
-                                             <span class="invalid-feedback" role="alert">
+                                        <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
@@ -67,11 +67,11 @@
                                         <label for="en_details">English Details</label>
                                         <textarea rows="5"
                                                   class="form-control @error('en_details') is-invalid @enderror"
-                                                  id="en_details" name="en_details"
+                                                  id="elm1" name="en_details"
                                                   placeholder="English Details">{{$portfolio->en_details}}</textarea>
 
                                         @error('en_details')
-                                             <span class="invalid-feedback" role="alert">
+                                        <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
@@ -92,7 +92,7 @@
                                                id="image" name="image">
 
                                         @error('image')
-                                            <span class="invalid-feedback" role="alert">
+                                        <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
@@ -174,7 +174,8 @@
                                         <label for="category_id">Category Name</label>
                                         <select class="form-control" id="category_id" name="category_id">
                                             @foreach($categories as $category)
-                                                <option value="{{$category->id}}" {{$portfolio->category_id == $category->id ? 'selected' : ''}}>
+                                                <option
+                                                    value="{{$category->id}}" {{$portfolio->category_id == $category->id ? 'selected' : ''}}>
                                                     {{$category->name}}
                                                 </option>
                                             @endforeach
@@ -208,4 +209,17 @@
     <script src="{{ asset('assets/js/shared/light-gallery.js') }}"></script>
 
     <!-- End custom js for this page-->
+
+    <!--tinymce js-->
+    <script src="{{ asset('admin/assets/js/plugin/tinymce/tinymce.min.js') }}"></script>
+    <script>
+        // Initialize TinyMCE for all textareas
+        tinymce.init({
+            selector: 'textarea', // Target all textarea elements
+            plugins: 'link image code',
+            toolbar: 'undo redo | styleselect | bold italic | link image | code',
+            height: 300,
+        });
+
+    </script>
 @endsection
