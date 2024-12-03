@@ -4,7 +4,7 @@
         <div id="liontestimonial" class="owl-carousel owl-theme">
             @foreach($testimonials as $testimonial)
                 <div class="item testimonials">
-                    <img class="responsive" style="object-fit: cover; width: 120px; height: 120px"
+                    <img class="responsive" style="object-fit: cover; width: 120px; height: 120px" loading="lazy"
                          src="{{ $testimonial->image ? asset('storage/upload/testimonials/' . $testimonial->image) : asset('resume/images/testimonials/1.jpg') }}"
                          alt="{{$testimonial->en_name}}">
                     <blockquote>

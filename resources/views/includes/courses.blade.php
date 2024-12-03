@@ -45,7 +45,7 @@
     <div class="row">
         @foreach($courses as $course)
             <div class="col-lg-3 col-sm-6">
-                <img class="courseImg" src="{{ asset('storage/upload/courses/'. $course->image) }}"
+                <img class="courseImg" loading="lazy" src="{{ asset('storage/upload/courses/'. $course->image) }}"
                      style="object-fit: fill; cursor: pointer;" alt="{{ $course->en_title }}">
                 <div class="course-info">
                     <h6>{{ $course->en_title }}</h6>
