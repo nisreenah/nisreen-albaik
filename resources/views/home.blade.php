@@ -103,21 +103,21 @@
     </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js" defer></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
 
 <!-- jQuery and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" defer></script>
 
-<script src="{{asset('resume/js/plugins.min.js')}}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmsb2nGLuIl04bt7CWJozRMhThvGa3y1w"></script>
-<script src="{{asset('resume/js/main.js')}}"></script>
-<script src="{{asset('resume/js/get-in-touch.js')}}"></script>
-<script src="{{asset('resume/js/leave-a-comment.js')}}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<script src="{{asset('resume/js/plugins.min.js')}}" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmsb2nGLuIl04bt7CWJozRMhThvGa3y1w" defer></script>
+<script src="{{asset('resume/js/main.js')}}" defer></script>
+<script src="{{asset('resume/js/get-in-touch.js')}}" async></script>
+<script src="{{asset('resume/js/leave-a-comment.js')}}" async></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js" defer></script>
 {{--<script src="{{asset('js/form-validation.js')}}"></script>--}}
 
 </body>

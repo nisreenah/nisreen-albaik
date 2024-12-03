@@ -9,7 +9,7 @@
                         <div class="post-thumbnail">
                             <a class="open-post" href="{{route('show-blog',$blog->id)}}">
                                 <img src="{{asset('storage/upload/blogs/'.$blog->image)}}"
-                                     style="width: 100%; height: 400px; object-fit: cover;" alt="">
+                                     loading="lazy" style="width: 100%; height: 400px; object-fit: cover;" alt="">
                             </a>
                         </div>
                         <div class="post-title">
